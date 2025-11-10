@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Referral Agent - UAE Loan Experts</title>
+    <meta name="description" content="Join our referral program and earn commissions by referring clients for loans and banking services in UAE.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uae-gold': '#C9A962',
+                        'uae-blue': '#0A4B78',
+                        'uae-dark': '#1A2B3C'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0A4B78 0%, #1e5a8e 50%, #C9A962 100%);
+        }
+        
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(10, 75, 120, 0.15);
+        }
+        
+        .form-input:focus {
+            border-color: #C9A962;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.1);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #C9A962 0%, #b8924d 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+        }
+        
+        .success-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .success-modal.show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="loan-apply.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-uae-blue to-uae-gold rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">₳</span>
+                </div>
+                <span class="text-2xl font-display font-bold text-uae-dark">UAE Loan Experts</span>
+            </a>
+            <a href="loan-apply.html" class="text-uae-blue hover:text-uae-gold font-semibold transition">
+                ← Back to Loan Page
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6">
+                💰 Referral Partner Program
+            </div>
+            <h1 class="text-4xl md:text-5xl font-display font-bold leading-tight mb-6">
+                Become a Referral Agent & <span class="text-uae-gold">Earn Commissions</span>
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Join our exclusive referral network. Refer clients for loans and banking services, and earn competitive commissions on every successful deal.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-display font-bold text-uae-dark text-center mb-12">
+                Why Partner with Us?
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">💵</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">Attractive Commissions</h3>
+                    <p class="text-gray-600 text-center">
+                        Earn up to 1% commission on every successful loan facilitated through your referrals.
+                    </p>
+                </div>
+                
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">🔗</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">Unique Tracking Link</h3>
+                    <p class="text-gray-600 text-center">
+                        Get your personalized referral URL to track all leads and conversions in real-time.
+                    </p>
+                </div>
+                
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">Full Transparency</h3>
+                    <p class="text-gray-600 text-center">
+                        Access dashboard to view all your referrals, status updates, and commission earnings.
+                    </p>
+                </div>
+                
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">No Targets</h3>
+                    <p class="text-gray-600 text-center">
+                        Work at your own pace. No minimum referral targets or monthly quotas required.
+                    </p>
+                </div>
+                
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">Full Support</h3>
+                    <p class="text-gray-600 text-center">
+                        Dedicated account manager, marketing materials, and ongoing training provided.
+                    </p>
+                </div>
+                
+                <div class="benefit-card bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-white text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-uae-dark mb-3 text-center">Quick Payouts</h3>
+                    <p class="text-gray-600 text-center">
+                        Receive commission payments within 7 days of loan disbursement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Registration Form Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-2xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-bold text-uae-dark mb-4">
+                    Register as a Referral Agent
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Fill out the form below to get your unique referral code and start earning
+                </p>
+            </div>
+            
+            <form id="agentForm" class="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">
+                <!-- Hidden Fields -->
+                <input type="hidden" name="SubmissionTimestamp" id="SubmissionTimestamp">
+                <input type="hidden" name="FormType" value="Agent_Registration">
+                
+                <div class="space-y-6">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="AgentName" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Full Name <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="AgentName" 
+                            name="AgentName" 
+                            required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+                    
+                    <!-- Mobile Number -->
+                    <div>
+                        <label for="AgentMobile" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Mobile Number (WhatsApp) <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="AgentMobile" 
+                            name="AgentMobile" 
+                            required 
+                            pattern="[0-9+\s\-()]+"
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                            placeholder="+971 XX XXX XXXX"
+                        >
+                        <p class="text-sm text-gray-500 mt-2">We'll send your referral link to this WhatsApp number</p>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div>
+                        <label for="AgentEmail" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Email Address <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="AgentEmail" 
+                            name="AgentEmail" 
+                            required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+                    
+                    <!-- Emirate -->
+                    <div>
+                        <label for="Emirate" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Emirate <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="Emirate" 
+                            name="Emirate" 
+                            required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                        >
+                            <option value="">-- Select Emirate --</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Abu Dhabi">Abu Dhabi</option>
+                            <option value="Sharjah">Sharjah</option>
+                            <option value="Ajman">Ajman</option>
+                            <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                            <option value="Fujairah">Fujairah</option>
+                            <option value="Umm Al Quwain">Umm Al Quwain</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Current Profession -->
+                    <div>
+                        <label for="Profession" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Current Profession / Business <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="Profession" 
+                            name="Profession" 
+                            required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                            placeholder="e.g., Business Consultant, Real Estate Agent, etc."
+                        >
+                    </div>
+                    
+                    <!-- Estimated Monthly Referrals -->
+                    <div>
+                        <label for="ExpectedReferrals" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Estimated Monthly Referrals
+                        </label>
+                        <select 
+                            id="ExpectedReferrals" 
+                            name="ExpectedReferrals" 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                        >
+                            <option value="1-5">1-5 referrals</option>
+                            <option value="5-10">5-10 referrals</option>
+                            <option value="10-20">10-20 referrals</option>
+                            <option value="20+">20+ referrals</option>
+                        </select>
+                    </div>
+                    
+                    <!-- How Did You Hear About Us -->
+                    <div>
+                        <label for="HearAbout" class="block text-sm font-semibold text-gray-700 mb-2">
+                            How did you hear about us?
+                        </label>
+                        <select 
+                            id="HearAbout" 
+                            name="HearAbout" 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uae-gold"
+                        >
+                            <option value="Google Search">Google Search</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Friend Referral">Friend Referral</option>
+                            <option value="Existing Client">Existing Client</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Terms Agreement -->
+                    <div class="flex items-start">
+                        <input 
+                            type="checkbox" 
+                            id="AgreeTerms" 
+                            name="AgreeTerms" 
+                            required 
+                            class="mt-1 mr-3"
+                        >
+                        <label for="AgreeTerms" class="text-sm text-gray-700">
+                            I agree to the <a href="#" class="text-uae-blue underline">Terms & Conditions</a> and <a href="#" class="text-uae-blue underline">Referral Partner Agreement</a>
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit" 
+                        id="submitBtn"
+                        class="submit-btn w-full text-white font-bold py-4 px-6 rounded-lg text-lg shadow-lg"
+                    >
+                        Register & Get My Referral Link →
+                    </button>
+                    
+                    <!-- Form Message -->
+                    <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-12 h-12 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                
+                <h3 class="text-3xl font-bold text-uae-dark mb-4">Welcome to Our Referral Network! 🎉</h3>
+                <p class="text-gray-600 mb-8">Your registration is complete. Here's your unique referral information:</p>
+                
+                <div class="bg-gradient-to-br from-uae-blue to-uae-gold text-white rounded-xl p-6 mb-6">
+                    <div class="text-sm opacity-90 mb-2">Your Referral Code</div>
+                    <div id="modalRefCode" class="text-3xl font-bold mb-4">REF0000</div>
+                    <div class="text-sm opacity-90 mb-2">Your Unique Referral Link</div>
+                    <div id="modalRefLink" class="bg-white/20 rounded-lg p-3 font-mono text-sm break-all">
+                        https://yourdomain.com/loan-apply?ref=REF0000
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 mb-6">
+                    <button onclick="copyRefLink()" class="flex-1 bg-uae-gold text-white py-3 px-6 rounded-lg font-bold hover:bg-opacity-90 transition">
+                        📋 Copy Link
+                    </button>
+                    <button onclick="shareWhatsApp()" class="flex-1 bg-green-500 text-white py-3 px-6 rounded-lg font-bold hover:bg-green-600 transition">
+                        💬 Share via WhatsApp
+                    </button>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-left">
+                    <h4 class="font-bold text-uae-dark mb-2">📱 What's Next?</h4>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>✓ Your referral link has been sent to your WhatsApp & Email</li>
+                        <li>✓ Share this link with potential clients</li>
+                        <li>✓ Track your referrals in the dashboard (link sent via email)</li>
+                        <li>✓ Our team will contact you within 24 hours for onboarding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-uae-dark text-white py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">UAE Loan Experts</h4>
+                    <p class="text-gray-400 text-sm">
+                        Your trusted partner for business loans and banking solutions in UAE.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="loan-apply.html" class="hover:text-uae-gold transition">Loan Application</a></li>
+                        <li><a href="#" class="hover:text-uae-gold transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-uae-gold transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-uae-gold transition">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>📞 +971 XX XXX XXXX</li>
+                        <li>📧 partners@uaeloanexperts.ae</li>
+                        <li>📍 Dubai, United Arab Emirates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 UAE Loan Experts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        let generatedRefCode = '';
+        let generatedRefLink = '';
+        
+        // === FORM SUBMISSION WITH MAKE.COM WEBHOOK ===
+        document.getElementById('agentForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '⏳ Processing Registration...';
+            
+            // Add timestamp
+            document.getElementById('SubmissionTimestamp').value = new Date().toISOString();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Generate unique referral code (in production, this should come from backend)
+            generatedRefCode = 'REF' + Math.random().toString(36).substr(2, 6).toUpperCase();
+            data.ReferralCode = generatedRefCode;
+            
+            // === REPLACE WITH YOUR MAKE.COM WEBHOOK URL FOR AGENT REGISTRATION ===
+            const WEBHOOK_URL = 'https://hook.eu2.make.com/ojamenr1qlkvg17a8i3swm419f2dp584';
+            
+            try {
+                const response = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    // Generate referral link
+                    const baseURL = window.location.origin;
+                    generatedRefLink = `${baseURL}/loan-apply.html?ref=${generatedRefCode}`;
+                    
+                    // Show success modal
+                    document.getElementById('modalRefCode').textContent = generatedRefCode;
+                    document.getElementById('modalRefLink').textContent = generatedRefLink;
+                    document.getElementById('successModal').classList.add('show');
+                    
+                    // Reset form
+                    this.reset();
+                    
+                } else {
+                    throw new Error('Registration failed');
+                }
+                
+            } catch (error) {
+                // Error handling
+                formMessage.className = 'bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg';
+                formMessage.innerHTML = `
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Registration failed.</strong>
+                            <p class="text-sm mt-1">Please email us at partners@uaeloanexperts.ae or try again later.</p>
+                        </div>
+                    </div>
+                `;
+                formMessage.classList.remove('hidden');
+                console.error('Form submission error:', error);
+            } finally {
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+        
+        // === MODAL FUNCTIONS ===
+        function closeModal() {
+            document.getElementById('successModal').classList.remove('show');
+        }
+        
+        function copyRefLink() {
+            navigator.clipboard.writeText(generatedRefLink).then(() => {
+                alert('✓ Referral link copied to clipboard!');
+            });
+        }
+        
+        function shareWhatsApp() {
+            const message = encodeURIComponent(
+                `🎉 Join me in the UAE Loan Experts Referral Program!\n\n` +
+                `I'm now a certified referral agent helping businesses get loans in UAE.\n\n` +
+                `My Referral Code: ${generatedRefCode}\n` +
+                `Apply through my link: ${generatedRefLink}\n\n` +
+                `Get fast loan approvals with competitive rates! 💼`
+            );
+            window.open(`https://wa.me/?text=${message}`, '_blank');
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('successModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
